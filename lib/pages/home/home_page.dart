@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_danthocode/pages/clock/clock_screen.dart';
+import 'package:flutter_danthocode/pages/todo/note_screen.dart';
 import '../calculator/calculator.dart';
 
 class HomePage extends StatefulWidget {
@@ -46,6 +48,31 @@ class _HomePageState extends State<HomePage> {
                   },
                 ),
                 const SizedBox(height: 16),
+                NavigateApplication(
+                  icon: Icons.today_outlined,
+                  title: 'Notes',
+                  onTap: () {
+                    navigator(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const NotesScreen(),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 16),
+                NavigateApplication(
+                  icon: Icons.watch_later_outlined,
+                  title: 'Timer',
+                  onTap: () {
+                    navigator(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ClockScreen(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),

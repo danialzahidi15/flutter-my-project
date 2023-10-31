@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_danthocode/pages/todo/note_controller.dart';
+import 'package:flutter_danthocode/pages/notes/note_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final noteProvider = StateNotifierProvider<NotesNotifier, List<Notes>>((ref) => NotesNotifier());

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../components/calculation_text.dart';
-import '../../components/calculator_button.dart';
+
+import '../../widgets/calculation_text.dart';
+import '../../widgets/calculator_button.dart';
 
 class CalculatorApp extends StatelessWidget {
   const CalculatorApp({Key? key}) : super(key: key);

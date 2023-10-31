@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_danthocode/pages/clock/clock_screen.dart';
-import 'package:flutter_danthocode/pages/todo/note_screen.dart';
+import 'package:flutter_danthocode/pages/quiz/quiz_screen.dart';
 import '../calculator/calculator.dart';
+import '../notes/note_screen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -62,6 +63,19 @@ class _HomePageState extends State<HomePage> {
                 ),
                 const SizedBox(height: 16),
                 NavigateApplication(
+                  icon: Icons.quiz_outlined,
+                  title: 'Quiz',
+                  onTap: () {
+                    navigator(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const QuizScreen(),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(height: 16),
+                NavigateApplication(
                   icon: Icons.watch_later_outlined,
                   title: 'Timer',
                   onTap: () {
@@ -73,6 +87,7 @@ class _HomePageState extends State<HomePage> {
                     );
                   },
                 ),
+                const SizedBox(height: 16),
               ],
             ),
           ),

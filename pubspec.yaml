@@ -31,16 +31,21 @@ dependencies:
     sdk: flutter
   
   flutter_inset_box_shadow: ^1.0.8
-  flutter_riverpod: ^1.0.4
+  flutter_riverpod: ^2.1.2
   function_tree: ^0.8.13
   timer_count_down: ^2.2.0
   dio: ^4.0.0
   enum_to_string: ^2.0.1
   equatable: ^2.0.0
   flutter_hooks: ^0.18.0
-  hooks_riverpod: ^1.0.4
-  html_character_entities: ^0.1.2+4
+  hooks_riverpod: ^2.1.2
+  html_character_entities: ^1.0.0
   meta: ^1.2.4
+  uuid: ^3.0.7
+  riverpod_annotation: ^1.0.6
+  intl: ^0.17.0
+  http: ^0.13.5
+  flutter_svg: ^1.1.6
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -50,6 +55,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  build_runner: ^2.3.2
+  flutter_gen_runner: ^5.1.0+1
+  riverpod_generator: ^1.1.1
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -69,8 +77,15 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/cake-bday.png
+    - assets/doge-xmas.png
+    - assets/flower.png
+    - assets/gift-happy.png
+    - assets/gift-xmas.png
+    - assets/happy-bday.png
+    - assets/hohoho.png
+    - assets/sock-xmas.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

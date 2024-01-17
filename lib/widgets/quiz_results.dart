@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_danthocode/controller/quiz/quiz_controller.dart';
-import 'package:flutter_danthocode/controller/quiz/quiz_state.dart';
-import 'package:flutter_danthocode/repositories/quiz/quiz_repositories.dart';
+import 'package:flutter_danthocode/features/quiz/controller/quiz_controller.dart';
+import 'package:flutter_danthocode/features/quiz/controller/quiz_state.dart';
+import 'package:flutter_danthocode/features/quiz/repository/quiz_repositories.dart';
 import 'package:flutter_danthocode/widgets/common_button.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/question/question_model.dart';

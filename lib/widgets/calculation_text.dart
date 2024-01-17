@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_danthocode/pages/calculator/calculator_controller.dart';
+import 'package:flutter_danthocode/features/calculator/controller/calculator_controller.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CalculationText extends ConsumerWidget {

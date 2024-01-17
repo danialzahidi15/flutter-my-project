@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_danthocode/pages/home/home_page.dart';
+import 'package:flutter_danthocode/features/home/screen/home_page.dart';
+import 'package:flutter_danthocode/features/home/screen/landing_screen.dart';
+import 'package:flutter_danthocode/theme/app_theme.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
@@ -14,10 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'danthocode app',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
+      theme: AppTheme.theme,
+      home: const LandingScreen(),
     );
   }
 }

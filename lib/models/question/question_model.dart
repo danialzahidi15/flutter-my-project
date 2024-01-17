@@ -2,7 +2,6 @@
 // https://opentdb.com/api.php?amount=10
 
 import 'dart:convert';
-
 import 'package:equatable/equatable.dart';
 
 class Question extends Equatable {
